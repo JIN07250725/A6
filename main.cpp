@@ -104,7 +104,7 @@ int main() {
 
         totalCost = quantity * COST;
 
-        // Not enough money → insert more coins → return to menu
+        // Not enough money, insert more coins, return to menu
         if (totalCost > balance) {
             cout << "\nYour total is $" << totalCost << "\n";
             cout << "Your balance is $" << balance << "\n";
@@ -130,7 +130,7 @@ int main() {
             continue; // Back to menu
         }
 
-        // Enough money → purchase and end
+        // Enough money, purchase and end
         balance -= totalCost;
         cout << "\nYour total is $" << totalCost << "\n";
         cout << "Your balance is $" << balance << "\n";
